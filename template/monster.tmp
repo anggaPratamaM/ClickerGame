@@ -1,5 +1,5 @@
 <div class="container">
-	<div id="monsterTitle">{{title}}</div>
+	<div id="monsterTitle">{{titleMonster}}</div>
 	<div class="monsterContainer">	
 		<div class="monster">
 			<p>Hi! I am Monster level {{monsterLevel}}</p>

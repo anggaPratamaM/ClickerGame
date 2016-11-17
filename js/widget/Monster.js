@@ -10,8 +10,9 @@ Clazz.com.test.widget.Monster = Clazz.extend(Clazz.WidgetWithTemplate, {
 	monsterLevel: null,
 	clickMonster: null,
 
-	initialize : function(title){
-		this.data = {"title":title};
+	initialize : function(){
+		this.title = 'Monsters'
+		this.data.titleMonster = this.title;
 		this.healthPoin = 10;
 		this.maxHealthPoin = 10;
 		this.data.healthPoin = this.healthPoin;

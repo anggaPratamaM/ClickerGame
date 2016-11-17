@@ -10,8 +10,9 @@ Clazz.com.test.widget.StatusBar = Clazz.extend(Clazz.WidgetWithTemplate, {
 	coin: null,
 	
 
-	initialize : function(title){
-		this.data = {"title":title};
+	initialize : function(){
+		this.title = 'Player(s) Status'; 
+		this.data.titlePlayer = this.title;
 		this.attack = 1;
 		this.monsterKilled = 0;
 		this.coin = 0;

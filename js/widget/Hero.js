@@ -21,7 +21,7 @@ Clazz.com.test.widget.Hero = Clazz.extend(Clazz.WidgetWithTemplate, {
 
 		//set title
 		this.title = 'Heroes';
-		this.data.title = this.title;
+		this.data.titleHero = this.title;
 		
 		//hero-list
 		this.heroOne = new Clazz.com.test.widget.HeroOne('Hero 1');

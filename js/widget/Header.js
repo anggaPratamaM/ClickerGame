@@ -6,8 +6,9 @@ Clazz.com.test.widget.Header = Clazz.extend(Clazz.WidgetWithTemplate, {
 	defaultContainer : "widget\\:header",
 	title: null,
 
-	initialize : function(title){
-		this.data = {"title":title};
+	initialize : function(){
+		this.title = 'Clicker Heroes KAWE';
+		this.data.titleHeader = this.title;
 	},
 	
 	preRender : function(whereToRender, renderFunction){

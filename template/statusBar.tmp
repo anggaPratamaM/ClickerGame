@@ -1,5 +1,5 @@
 <div class="statusBarContainer">
-	<div id="statusBarTitle">{{title}}</div>
+	<div id="statusBarTitle">{{titlePlayer}}</div>
 	<div class="miniContainer">Attack = {{attack}}</div>
 	<div class="miniContainer">Monster Killed = {{monsterKilled}}</div>
 	<div class="miniContainer">Coins = {{coin}}</div>

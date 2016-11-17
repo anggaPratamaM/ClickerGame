@@ -20,12 +20,13 @@ Clazz.com.test.ClickHeroListener = Clazz.extend(Clazz.Base, {
 			heroOneLevel = heroOneLevel + levelAdder; // add hero level by one
 			attack = attack + heroOneAttackAdder; // add attack by heroOneAttackAdder
 			heroOneAttackAdded = heroOneAttackAdded + heroOneAttackAdder; // add attackAdded by attackAdder
+			heroOnePrice = Math.floor(heroOnePrice*1.2); // reset the price - multiply it by 1.2  
 		}else{
 			alert('You have not enough coins!! Try to kill some monsters!');
 		}
 		this.statusBar.setAttack(attack);
 		this.statusBar.setCoin(coin);
-		this.heroOne.setHeroOne(heroOneLevel, heroOneAttackAdded);	
+		this.heroOne.setHeroOne(heroOneLevel, heroOneAttackAdded, heroOnePrice);	
 		
 	},
 
@@ -38,12 +39,13 @@ Clazz.com.test.ClickHeroListener = Clazz.extend(Clazz.Base, {
 			heroTwoLevel = heroTwoLevel + levelAdder; // add hero level by Two
 			attack = attack + heroTwoAttackAdder; // add attack by heroTwoAttackAdder
 			heroTwoAttackAdded = heroTwoAttackAdded + heroTwoAttackAdder; // add attackAdded by attackAdder
+			heroTwoPrice = Math.floor(heroTwoPrice*1.2); // reset the price - multiply it by 1.2
 		}else{
 			alert('You have not enough coins!! Try to kill some monsters!');
 		}
 		this.statusBar.setAttack(attack);
 		this.statusBar.setCoin(coin);
-		this.heroTwo.setHeroTwo(heroTwoLevel, heroTwoAttackAdded);	
+		this.heroTwo.setHeroTwo(heroTwoLevel, heroTwoAttackAdded, heroTwoPrice);	
 		
 	},
 
@@ -56,12 +58,13 @@ Clazz.com.test.ClickHeroListener = Clazz.extend(Clazz.Base, {
 			heroThreeLevel = heroThreeLevel + levelAdder; // add hero level by Three
 			attack = attack + heroThreeAttackAdder; // add attack by heroThreeAttackAdder
 			heroThreeAttackAdded = heroThreeAttackAdded + heroThreeAttackAdder; // add attackAdded by attackAdder
+			heroThreePrice = Math.floor(heroThreePrice*1.2); // reset the price - multiply it by 1.2
 		}else{
 			alert('You have not enough coins!! Try to kill some monsters!');
 		}
 		this.statusBar.setAttack(attack);
 		this.statusBar.setCoin(coin);
-		this.heroThree.setHeroThree(heroThreeLevel, heroThreeAttackAdded);	
+		this.heroThree.setHeroThree(heroThreeLevel, heroThreeAttackAdded, heroThreePrice);	
 		
 	}
 });

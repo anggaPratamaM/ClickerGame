@@ -27,13 +27,15 @@ Clazz.com.test.widget.HeroTwo = Clazz.extend(Clazz.WidgetWithTemplate, {
 
 	},
 	
-	setHeroTwo : function(level, attackAdded){
+	setHeroTwo : function(level, attackAdded, price){
 		//reset status
 		this.level = level;
 		this.attackAdded = attackAdded;
+		this.price = price;
 		//reset to heroTwo handlebars
 		this.data.levelTwo = this.level;
 		this.data.attackAddedTwo = this.attackAdded;
+		this.data.priceTwo = this.price;
 		this.render();
 	},
 

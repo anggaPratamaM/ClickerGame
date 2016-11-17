@@ -1,5 +1,5 @@
 <div class="container">
-	<div id="heroTitle">{{title}}</div>
+	<div id="heroTitle">{{titleHero}}</div>
 	<div class="heroContainer">	
 		<ul>
 			<li><div class="miniContainer">Name</div></li>
