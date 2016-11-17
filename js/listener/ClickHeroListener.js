@@ -34,7 +34,7 @@ Clazz.com.test.ClickHeroListener = Clazz.extend(Clazz.Base, {
 		var coin = this.statusBar.coin;
 		var levelAdder = this.constant.C_LEVEL_ADDER;
 		if(coin >= heroTwoPrice){// if coins are enough to upgrade hero level
-			coin = coin - heroOTwoPrice; // substract coin by price
+			coin = coin - heroTwoPrice; // substract coin by price
 			heroTwoLevel = heroTwoLevel + levelAdder; // add hero level by Two
 			attack = attack + heroTwoAttackAdder; // add attack by heroTwoAttackAdder
 			heroTwoAttackAdded = heroTwoAttackAdded + heroTwoAttackAdder; // add attackAdded by attackAdder
@@ -44,6 +44,24 @@ Clazz.com.test.ClickHeroListener = Clazz.extend(Clazz.Base, {
 		this.statusBar.setAttack(attack);
 		this.statusBar.setCoin(coin);
 		this.heroTwo.setHeroTwo(heroTwoLevel, heroTwoAttackAdded);	
+		
+	},
+
+	addLevelHeroThree: function(heroThreeLevel, heroThreeAttackAdded, heroThreeAttackAdder, heroThreePrice){
+		var attack = this.statusBar.attack;
+		var coin = this.statusBar.coin;
+		var levelAdder = this.constant.C_LEVEL_ADDER;
+		if(coin >= heroThreePrice){// if coins are enough to upgrade hero level
+			coin = coin - heroThreePrice; // substract coin by price
+			heroThreeLevel = heroThreeLevel + levelAdder; // add hero level by Three
+			attack = attack + heroThreeAttackAdder; // add attack by heroThreeAttackAdder
+			heroThreeAttackAdded = heroThreeAttackAdded + heroThreeAttackAdder; // add attackAdded by attackAdder
+		}else{
+			alert('You have not enough coins!! Try to kill some monsters!');
+		}
+		this.statusBar.setAttack(attack);
+		this.statusBar.setCoin(coin);
+		this.heroThree.setHeroThree(heroThreeLevel, heroThreeAttackAdded);	
 		
 	}
 });

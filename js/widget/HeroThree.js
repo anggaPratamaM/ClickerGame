@@ -32,8 +32,8 @@ Clazz.com.test.widget.HeroThree = Clazz.extend(Clazz.WidgetWithTemplate, {
 		this.level = level;
 		this.attackAdded = attackAdded;
 		//reset to heroThree handlebars
-		this.data.level = this.level;
-		this.data.attackAdded = this.attackAdded;
+		this.data.levelThree = this.level;
+		this.data.attackAddedThree = this.attackAdded;
 		this.render();
 	},
 

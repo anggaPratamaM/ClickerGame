@@ -37,6 +37,8 @@ Clazz.com.test.widget.Hero = Clazz.extend(Clazz.WidgetWithTemplate, {
 			'heroThree': this.heroThree,
 		});
 		this.heroOne.clickHeroOne.add(this.clickHeroListener.addLevelHeroOne, this.clickHeroListener);
+		this.heroTwo.clickHeroTwo.add(this.clickHeroListener.addLevelHeroTwo, this.clickHeroListener);
+		this.heroThree.clickHeroThree.add(this.clickHeroListener.addLevelHeroThree, this.clickHeroListener);
 	},
 
 	preRender : function(whereToRender, renderFunction){
