@@ -11,7 +11,7 @@ Clazz.com.test.widget.StatusBar = Clazz.extend(Clazz.WidgetWithTemplate, {
 	
 
 	initialize : function(){
-		this.title = 'Player(s) Status'; 
+		this.title = 'Player\'s Status'; 
 		this.data.titlePlayer = this.title;
 		this.attack = 1;
 		this.monsterKilled = 0;

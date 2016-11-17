@@ -4,6 +4,9 @@
 		<div class="monster">
 			<p>Hi! I am Monster level {{monsterLevel}}</p>
 			<p>My HP is = {{healthPoin}}</p>
+			<div id="maxHealthBar">
+  				<div id="healthBar"></div>
+			</div>
 			<p>Click to kill me</p>
 			<p id="scream">Aaaarrrrggh</p>
 		</div>

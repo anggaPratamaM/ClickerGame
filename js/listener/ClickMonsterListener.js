@@ -11,6 +11,7 @@ Clazz.com.test.ClickMonsterListener = Clazz.extend(Clazz.Base, {
 		var attack = this.statusBar.attack;
 		var coin = this.statusBar.coin;
 		healthMonster = healthMonster - attack;
+		var healthBar = (healthMonster/maxHealthPoin)*100;
 		if(healthMonster <= 0){// if monster die
 			$('#scream').show();
 			this.statusBar.setMonsterKilled();
@@ -18,6 +19,7 @@ Clazz.com.test.ClickMonsterListener = Clazz.extend(Clazz.Base, {
 			healthMonster = maxHealthPoin;
 			monsterLevel++;
 			coin = coin + (monsterLevel-1);
+
 		}
 		this.statusBar.setCoin(coin);
 		this.monster.setMonsterAfterClick(healthMonster, maxHealthPoin, monsterLevel);
