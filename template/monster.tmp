@@ -1,0 +1,11 @@
+<div class="container">
+	<div id="monsterTitle">{{title}}</div>
+	<div class="monsterContainer">	
+		<div class="monster">
+			<p>Hi! I am Monster level {{monsterLevel}}</p>
+			<p>My HP is = {{healthPoin}}</p>
+			<p>Click to kill me</p>
+			<p id="scream">Aaaarrrrggh</p>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: arial;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+  border-color: red;
+  border-radius: 100%;
+}/* ------------------loader ------------------*/
+
+/* Game Page */
+.gamePage{
+  width: 100%;
+}/* Game Page */
+
+/* header */
+.header{
+	background-color: black;
+	padding: 15px;
+	text-align: center;
+	color: white;
+	font-size: 30px;
+	font-weight: bold;
+  margin-bottom: 30px;
+}/* header */
+
+/* gameContainer */
+.gameContainer{
+  width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  border: black 1px solid;
+  overflow: auto;
+  }/* gameContainer */
+
+/* container */
+ul {
+  overflow: auto;
+  clear: both;
+  list-style-type: none;
+}
+ul.hero:hover{
+  border: 1px solid green;
+}
+ul.hero:active{
+  border: 1px solid orange;
+}
+.container {
+  width: 400px;
+  overflow: auto;
+  border: black 1px solid;
+  padding: 5px;
+  float: left;
+  margin: 18px;
+}
+/* container */
+
+/* status bar */
+#statusBarTitle{
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 15px;
+  margin: 10px;
+}
+.statusBarContainer{
+  width: 818px;
+  margin: 0 auto;
+  padding: 20px;
+  border: black 1px solid;
+  overflow: auto;
+}
+/* status bar */
+
+/* hero */
+#heroTitle{
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 15px;
+  margin: 10px;
+}
+
+.heroContainer{
+  margin: 0 auto;
+}
+
+/* monster */
+#monsterTitle{
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 15px;
+  margin: 10px;
+}
+
+.monsterContainer{
+  margin: 0 auto;
+}
+.miniContainer {
+  overflow: auto;
+  border: black 1px solid;
+  padding: 5px;
+  float: left;
+  margin-right: 1px;
+}
+ul li div.miniContainer {
+  display: inline-block;
+  
+  width: 85px;
+  border: black 1px solid;
+  padding: 5px;
+  float: left;
+  margin-right: 1px;
+}
+.monster{
+  text-align: center;
+  font-size: 14px;
+  padding: 100px;
+  margin: 2px;
+  border: black 1px solid;
+}
+.monster:hover{
+  border: yellow 1px solid;
+}
+.monster:active{
+  border: red 1px solid;
+}
+
+#scream{
+  display: none;
+  font-size: 30px;
+  font-weight: bold;
+  color: red;
+}/* monster */

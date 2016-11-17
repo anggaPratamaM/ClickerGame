@@ -1,0 +1,6 @@
+<ul class="hero" id="heroTwo">
+	<li><div class="miniContainer">{{nameTwo}}</div></li> 
+	<li><div class="miniContainer">{{priceTwo}}</div></li>
+	<li><div class="miniContainer">{{levelTwo}}</div></li>
+	<li><div class="miniContainer">{{attackAddedTwo}}</div></li>
+</ul>

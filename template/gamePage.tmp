@@ -1,0 +1,8 @@
+<div class="gamePage">
+	<widget:header></widget:header>
+	<div class="gameContainer">
+		<widget:statusBar></widget:statusBar>
+		<widget:hero></widget:hero>
+		<widget:monster></widget:monster>
+	</div>
+</div>

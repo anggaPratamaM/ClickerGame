@@ -1,0 +1,14 @@
+<div class="container">
+	<div id="heroTitle">{{title}}</div>
+	<div class="heroContainer">	
+		<ul>
+			<li><div class="miniContainer">Name</div></li>
+			<li><div class="miniContainer">Price (coin)</div></li>
+			<li><div class="miniContainer">Level</div></li>
+			<li><div class="miniContainer">Attack</div></li>
+		</ul>
+		<widget:heroone></widget:heroone>
+		<widget:herotwo></widget:herotwo>
+		<widget:herothree></widget:herothree>
+	</div>
+</div>
