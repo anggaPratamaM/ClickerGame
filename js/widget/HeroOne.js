@@ -9,7 +9,6 @@ Clazz.com.test.widget.HeroOne = Clazz.extend(Clazz.WidgetWithTemplate, {
 	attackAdded: null,
 	price: null,
 	level: null,
-	clickHeroOne: null,
 
 	initialize : function(name){
 		//hero status

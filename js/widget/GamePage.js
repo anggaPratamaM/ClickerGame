@@ -13,11 +13,15 @@ Clazz.com.test.widget.GamePage = Clazz.extend(Clazz.WidgetWithTemplate, {
 
 	initialize : function(config){
 		this.constant = new Clazz.com.test.constant.Constant();// CONSTANT
-		this.header = new Clazz.com.test.widget.Header('Clicker Hero KaWe');
-		this.statusBar = new Clazz.com.test.widget.StatusBar('Status Bar');// STATUS BAR
-		this.hero = new Clazz.com.test.widget.Hero('Hero');// HERO
-		this.monster = new Clazz.com.test.widget.Monster('Monster');// MONSTER
-		//listener
+		this.header = new Clazz.com.test.widget.Header();
+		this.statusBar = new Clazz.com.test.widget.StatusBar();// STATUS BAR
+		this.hero = new Clazz.com.test.widget.Hero({// HERO
+			'constant': this.constant,
+			'statusBar': this.statusBar
+		});
+		this.monster = new Clazz.com.test.widget.Monster();// MONSTER
+		
+		//listener MONSTER
 		this.clickMonsterListener = new Clazz.com.test.ClickMonsterListener({
 			'statusBar': this.statusBar,
 			'monster': this.monster
